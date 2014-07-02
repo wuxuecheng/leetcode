@@ -9,7 +9,7 @@
 class Solution {
 public:
     ListNode *detectCycle(ListNode *head) {
-                ListNode *p1 = head, *p2 = head;
+        ListNode *p1 = head, *p2 = head;
         while(p2) {
             p2 = p2->next;
             if(p2 == NULL)
