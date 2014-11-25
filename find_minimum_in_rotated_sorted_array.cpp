@@ -23,3 +23,13 @@ public:
         return num[left];
     }
 };
+
+//other version
+class Solution {
+public:
+    int findMin(vector<int> &num)
+    {
+        sort(num.begin(), num.end());
+        return num[0];
+    }
+};
