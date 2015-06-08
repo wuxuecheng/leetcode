@@ -12,42 +12,53 @@ public:
         size_t rawCount = board.size();
         size_t colCount = board.begin()->size();
 
+
         for (size_t i = 0; i < rawCount; ++i)
         {
             for (size_t j = 0; j < colCount; ++j)
             {
-                m_visitedNode.clear();
-                m_word.clear();
+                vector<pair<size_t, size_t> > visitedNode;
+                visitedNode.push_back(make_pair(i, j));
 
-                findWordInternal(i, j, board, words);
+                string word;
+                findWordInternal(i, j, board, words, word, visitedNode);
             }
         }
 
+        return m_words;
+
     }
-    void findWordInternal(size_t row, size_t col, vector<vector<char>>& board, vector<string>& words)
+    void findWordInternal(int row, int col, vector<vector<char>>& board, vector<string>& words, const string& word, const vector<pair<size_t, size_t>>& visitedNodes)
     {
         if (row < 0 or col < 0 or row >= board.size() or col >= board.begin()->size())
         {
             return;
         }
-        if (find(m_visitedNode.begin(), m_visitedNode.end(), make_pair(row, col) != m_visitedNode.end()))
+        auto visitedNodeNew = visitedNodes;
+        if (find(visitedNode.begin(), visitedNode.end(), make_pair(row, col) != visitedNode.end()))
         {
             return;
         }
         else
         {
-            m_visitedNode.push_back(make_pair(row, col));
+            visitedNodeNew.push_back(make_pair(row, col));
         }
-        m_word += board[row][col];
 
-        if (find(words.begin(), words.end(), m_word) != words.end())
+        string newWord = word + board[row][col];
+
+        if (find(words.begin(), words.end(), newWord) != words.end())
         {
-            m_words.push_back(m_word);
+            m_words.push_back(newWord);
         }
+        
+        //dfs
+        findWordInternal(row - 1, col, board, words, newWord, visitedNodeNew);
+        findWordInternal(row + 1, col, board, words, newWord, visitedNodeNew);
+        findWordInternal(row, col - 1, board, words, newWord, visitedNodeNew);
+        findWordInternal(row, col + 1, board, words, newWord, visitedNodeNew);
     }
 private:
-    vector<pair<size_t, size_t> > m_visitedNode;
-    string m_word;
+    //vector<pair<size_t, size_t> > m_visitedNode;
+    //string m_word;
     vector<string> m_words;
-};
-
+}
