@@ -58,7 +58,5 @@ public:
         findWordInternal(row, col + 1, board, words, newWord, visitedNodeNew);
     }
 private:
-    //vector<pair<size_t, size_t> > m_visitedNode;
-    //string m_word;
     vector<string> m_words;
-}
+};
