@@ -11,11 +11,6 @@ struct TrieNode {
     }
 };
 
-Trie() { root = new TrieNode(); }
-TrieNode* getRoot() { return root; }
-
-void addString(string s) {
-    TrieNode* t = root;
     for (int i = 0; i<s.length(); i++) {
         if (t->nodes[s[i] - 'a'])
             t = t->nodes[s[i] - 'a'];
@@ -79,7 +74,13 @@ vector<string> findWords(vector<vector<char>>& board, vector<string>& words) {
   }
 };
 
+<<<<<<< HEAD
+// my version, time limited exceed....
+// trie tree
+// true tree II
+=======
 //my version, time limited exceed....
+>>>>>>> parent of aa305c5... git learn demo
 class Solution {
 public:
     vector<string> findWords(vector<vector<char>>& board, vector<string>& words) {
