@@ -63,3 +63,8 @@ int singleNumber_2(int A[], int n)
  	return ones; 
 } 
 */ 
+
+int main()
+{
+    return 0;
+}

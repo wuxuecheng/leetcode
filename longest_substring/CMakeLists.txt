@@ -1,0 +1,1 @@
+ADD_EXECUTABLE(longest_substring longest_substring.cpp)

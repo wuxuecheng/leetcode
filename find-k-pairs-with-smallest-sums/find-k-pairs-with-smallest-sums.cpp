@@ -1,3 +1,8 @@
+#include <vector>
+#include <queue>
+
+using namespace std;
+
 class Solution {
 public:
     vector<pair<int, int>> kSmallestPairs(vector<int>& nums1, vector<int>& nums2, int k) {
@@ -20,3 +25,8 @@ public:
         return result;
     }
 };
+
+int main()
+{
+    return 0;
+}

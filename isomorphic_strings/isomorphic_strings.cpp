@@ -1,4 +1,9 @@
 //38ms
+#include <string>
+#include <map>
+
+using namespace std;
+
 class Solution {
 public:
     bool isIsomorphic(string s, string t) {
@@ -58,3 +63,8 @@ public:
         return true;
     }
 };*/
+
+int main()
+{
+    return 0;
+}

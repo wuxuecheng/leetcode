@@ -1,3 +1,8 @@
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
 class Solution {
 public:
     int findMin(vector<int> &num)
@@ -25,7 +30,7 @@ public:
 };
 
 //other version
-class Solution {
+class Solution1 {
 public:
     int findMin(vector<int> &num)
     {
@@ -33,3 +38,8 @@ public:
         return num[0];
     }
 };
+
+int main()
+{
+    return 0;
+}

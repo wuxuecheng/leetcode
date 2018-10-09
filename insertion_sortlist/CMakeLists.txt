@@ -1,0 +1,1 @@
+ADD_EXECUTABLE(insertion_sortlist insertion_sortlist.cpp)

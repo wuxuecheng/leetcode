@@ -1,3 +1,7 @@
+#include <vector>
+
+using namespace std;
+
 class Solution {
 public:
     vector<int> searchRange(int A[], int n, int target);
@@ -96,4 +100,9 @@ vector<int> Solution::searchRange(int A[], int n, int target)
         posSet.insert(posSet.begin(),2,-1);
      }
      return posSet;
+}
+
+int main()
+{
+    return 0;
 }

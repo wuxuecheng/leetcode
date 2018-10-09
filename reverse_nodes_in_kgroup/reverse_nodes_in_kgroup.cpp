@@ -2,6 +2,10 @@
 //1->2->3->4->5 --- 3 ----3->2->1->4->5
 /**
  * Definition for singly-linked list.*/
+
+#include <cstdlib>
+#include <cstring>
+
 struct ListNode {
     int val;
     ListNode *next;
@@ -54,3 +58,8 @@ private:
         }
     }
 };
+
+int main()
+{
+    return 0;
+}

@@ -1,3 +1,5 @@
+#include <cstring>
+
 class Solution {
 public:
     int rangeBitwiseAnd(int m, int n) {
@@ -55,3 +57,8 @@ public:
     return n;
 
 }*/
+
+int main()
+{
+    return 0;
+}

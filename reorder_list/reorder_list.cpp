@@ -13,6 +13,12 @@
 
 using namespace std;
 
+struct ListNode {
+    int val;
+    ListNode *next;
+    ListNode(int x) : val(x), next(NULL) {}
+};
+
 class Solution {
 public:
     void reorderList(ListNode *head) {
@@ -57,7 +63,7 @@ public:
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
-class Solution {
+class Solution1 {
 public:
     ListNode *reverseList(ListNode *head) {
         ListNode *pre = NULL, *cur = head, *next = NULL;
@@ -92,3 +98,7 @@ public:
     }
 };
 
+int main()
+{
+    return 0;
+}

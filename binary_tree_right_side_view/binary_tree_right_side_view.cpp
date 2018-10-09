@@ -16,6 +16,23 @@
 
  */
 
+#include <cstdlib>
+#include <vector>
+
+using namespace std;
+
+struct TreeNode {
+
+    int val;
+
+    TreeNode *left;
+
+    TreeNode *right;
+
+    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+
+};
+
 class Solution {
 
 public:
@@ -59,3 +76,8 @@ private:
     vector<int> m_needVals;
     int m_currentLayer;
 };
+
+int main()
+{
+    return 0;
+}

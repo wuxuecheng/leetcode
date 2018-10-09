@@ -1,4 +1,12 @@
 //ans from discuss
+
+#include <vector>
+#include <string>
+#include <cstddef>
+#include <algorithm>
+
+using namespace std;
+
 class Trie {
 public:
 struct TrieNode {
@@ -11,6 +19,15 @@ struct TrieNode {
     }
 };
 
+
+~Trie()
+{
+    delete root;
+}
+
+void addString(const std::string& s)
+{
+    auto t = root;
     for (int i = 0; i<s.length(); i++) {
         if (t->nodes[s[i] - 'a'])
             t = t->nodes[s[i] - 'a'];
@@ -25,6 +42,18 @@ struct TrieNode {
 
 TrieNode* moveNext(TrieNode* t, char c) {
     return t->nodes[c - 'a'];
+}
+
+TrieNode* getRoot()
+{
+    if (root)
+    {
+        return root;
+    }
+
+    root = new TrieNode();
+
+    return root;
 }
 
 private:
@@ -74,14 +103,8 @@ vector<string> findWords(vector<vector<char>>& board, vector<string>& words) {
   }
 };
 
-<<<<<<< HEAD
 // my version, time limited exceed....
-// trie tree
-// true tree II
-=======
-//my version, time limited exceed....
->>>>>>> parent of aa305c5... git learn demo
-class Solution {
+class Solution1 {
 public:
     vector<string> findWords(vector<vector<char>>& board, vector<string>& words) {
         if (words.empty())
@@ -164,3 +187,8 @@ public:
 private:
     vector<string> m_words;
 };
+
+int main()
+{
+    return 0;
+}

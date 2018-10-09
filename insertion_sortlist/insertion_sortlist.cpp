@@ -6,6 +6,14 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+#include <cstdlib>
+
+struct ListNode {
+   int val;
+   ListNode *next;
+   ListNode(int x) : val(x), next(NULL) {}
+};
+
 class Solution {
 public:
     ListNode *insertionSortList(ListNode *head) {
@@ -65,3 +73,8 @@ public:
     }
     
 };
+
+int main()
+{
+    return 0;
+}

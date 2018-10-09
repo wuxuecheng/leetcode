@@ -1,7 +1,10 @@
 #include <stack>
 #include <vector>
 #include <string>
+#include <iostream>
 #include <cstdlib>
+
+using namespace std;
 
 class Solution {
 public:
@@ -67,3 +70,9 @@ public:
     return number.top();        
     }
 };
+
+int main()
+{
+    return 0;
+}
+

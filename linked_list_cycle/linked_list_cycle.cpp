@@ -6,6 +6,15 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+#include <cstdlib>
+
+
+struct ListNode {
+   int val;
+   ListNode *next;
+   ListNode(int x) : val(x), next(NULL) {}
+};
+
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
@@ -22,3 +31,8 @@ public:
         return false;
     }
 };
+
+int main()
+{
+    return 0;
+}

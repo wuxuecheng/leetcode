@@ -1,3 +1,5 @@
+#include <cstring>
+
 class Solution
 {
 public:
@@ -35,3 +37,8 @@ public:
         return primesCount;
     }
 };
+
+int main()
+{
+    return 0;
+}

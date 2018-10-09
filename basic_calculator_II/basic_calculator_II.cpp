@@ -1,3 +1,9 @@
+#include <string>
+#include <stack>
+#include <cstdlib>
+
+using namespace std;
+
 class Solution {
 public:
     int calculate(string s)
@@ -93,3 +99,9 @@ public:
         return tmpResult;
     }
 };
+
+int main()
+{
+    return 0;
+}
+

@@ -1,0 +1,1 @@
+ADD_EXECUTABLE(minimum_size_subarray_sum minimum_size_subarray_sum.cpp)

@@ -1,3 +1,8 @@
+#include <vector>
+#include <climits>
+
+using namespace std;
+
 class Solution{
 public:
     int minSubArrayLen(int s, vector<int>& nums)
@@ -32,3 +37,8 @@ public:
         return minLen == INT_MAX ? 0 : minLen;
     }
 };
+
+int main()
+{
+    return 0;
+}

@@ -176,3 +176,7 @@ int MinStack::getMin()
 	return m_minDeque.top();
 }
 
+int main()
+{
+    return 0;
+}

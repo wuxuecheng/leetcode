@@ -1,3 +1,5 @@
+#include <cstddef>
+
 class Solution {
 public:
     int singleNumber(int A[], int n) {
@@ -13,3 +15,8 @@ public:
         
     }
 };
+
+int main()
+{
+    return 0;
+}

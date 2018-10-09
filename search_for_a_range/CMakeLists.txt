@@ -1,0 +1,1 @@
+ADD_EXECUTABLE(search_for_a_range search_for_a_range.cpp)

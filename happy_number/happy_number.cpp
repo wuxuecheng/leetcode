@@ -1,3 +1,7 @@
+#include<map>
+
+using namespace std;
+
 class Solution {
 public:
     bool isHappy(int n);
@@ -28,4 +32,9 @@ bool Solution::isHappy(int n)
 	m_existSums[sum]++;
 
 	return isHappy(sum);
+}
+
+int main()
+{
+    return 0;
 }

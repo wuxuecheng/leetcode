@@ -1,0 +1,1 @@
+ADD_EXECUTABLE(bitwise_and_of_number bitwise_and_of_number.cpp)
