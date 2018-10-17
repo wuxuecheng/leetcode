@@ -1,0 +1,1 @@
+ADD_EXECUTABLE(add_and_search_word add_and_search_word.cpp)
